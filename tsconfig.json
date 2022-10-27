@@ -1,11 +1,17 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,                             
-    "module": "es6",                                             
-    "moduleResolution": "node",              
-    "outDir": "dist"                                
+    "target": "es2017",
+    "module": "commonjs",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist"
   },
-  "ts-node": {
-    "esm": true
-  }
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "**/*.spec.ts"
+  ]
 }
